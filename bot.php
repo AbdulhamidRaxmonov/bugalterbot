@@ -1,7 +1,6 @@
-<?php
+<?
 
 include 'Telegram.php';
-
 
 $telegram = new Telegram('7951838833:AAEIAn5N3cSy33mdsreMC-d80piCSb-Upfw');
 
@@ -11,7 +10,10 @@ $text = $message['text'];
 $chat_id = $message['chat']['id'];
 
 if ($text == "/start") {
-    chooseLanguage();
+     $telegram->sendMessage([
+        'chat_id' => $chat_id,
+        'text' => $text
+    ]);
 }
 
 function chooseLanguage()
