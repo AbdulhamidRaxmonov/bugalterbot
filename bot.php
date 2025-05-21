@@ -1,4 +1,4 @@
-<?php
+<?
 
 include 'Telegram.php';
 
