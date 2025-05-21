@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Telegram.php';
+include 'Telegram.php';
 
 
 $telegram = new Telegram('7951838833:AAEIAn5N3cSy33mdsreMC-d80piCSb-Upfw');
